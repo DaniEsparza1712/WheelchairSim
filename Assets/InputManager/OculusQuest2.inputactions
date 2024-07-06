@@ -1,0 +1,34 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "InGame",
+            "id": "fd836cfa-4e5b-4c04-9525-1e0cc37f6599",
+            "actions": [
+                {
+                    "name": "Toggle Start Menu",
+                    "type": "Button",
+                    "id": "bea2d1bc-023b-4b02-bdd9-fe924851024c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "deb0fba9-18d5-4867-af3d-613503585d12",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>{LeftHand}/start",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle Start Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
