@@ -18,6 +18,8 @@ public class Handle : MonoBehaviour
     [Header("Input")]
     public string axis;
     public int direction;
+    public float distanceForInput;
+    [SerializeField] 
     private bool _isGrabbed = false;
     public UnityEvent onPosChanged;
     private Vector3 _prevPos;
@@ -78,7 +80,7 @@ public class Handle : MonoBehaviour
         handlePos = origin.TransformPoint(handlePos);
 
         transform.position = handlePos;
-        if(Vector3.Distance(origin.InverseTransformPoint(transform.position), _prevPos) > 0.2f)
+        if(Vector3.Distance(origin.InverseTransformPoint(transform.position), _prevPos) > distanceForInput)
                 PosChanged();
     }
 
@@ -93,5 +95,6 @@ public class Handle : MonoBehaviour
         transform.hasChanged = false;
         _prevPos = origin.InverseTransformPoint(transform.position);
         force = Mathf.Min(Vector3.Distance(origin.position, transform.position) / marginDistance, 1);
+        origin.position = transform.position;
     }
 }
