@@ -8,13 +8,14 @@ public class Handle : MonoBehaviour
     public float marginDistance;
     
     [Header("Speed Info")]
-    public float speed;
+    //public float speed;
     public float snapSpeed;
     public float snapRate;
     private float _timer;
     [Header("Transforms")]
     public Transform origin;
     public Transform controller;
+    public Transform originalPos;
     [Header("Input")]
     public string axis;
     public int direction;
@@ -28,6 +29,7 @@ public class Handle : MonoBehaviour
     {
         _timer = 0;
         _prevPos = transform.position;
+        Debug.Log(originalPos);
     }
 
     // Update is called once per frame
@@ -48,8 +50,7 @@ public class Handle : MonoBehaviour
         //For XR control
         if (_isGrabbed)
             SetPositionRelativeToControl();
-        else
-            transform.position = origin.position;
+
         
         
         if (Mathf.Abs(force) > 0 + Mathf.Epsilon)
@@ -71,9 +72,9 @@ public class Handle : MonoBehaviour
 
     public void SetPositionRelativeToControl()
     {
+        
         var controlPosRelativeToOrigin = origin.InverseTransformPoint(controller.position);
         var handleZOffset = Mathf.Clamp(controlPosRelativeToOrigin.z, -marginDistance, marginDistance);
-        Debug.Log(controlPosRelativeToOrigin);
         var handlePos = Vector3.zero;
         handlePos.z = controlPosRelativeToOrigin.z;
 
@@ -97,4 +98,11 @@ public class Handle : MonoBehaviour
         force = Mathf.Min(Vector3.Distance(origin.position, transform.position) / marginDistance, 1);
         origin.position = transform.position;
     }
+
+    public void ResetPos(){
+        SetGrabbed(false);
+        origin.position = originalPos.position;
+        transform.position = originalPos.position;
+    }
+
 }
