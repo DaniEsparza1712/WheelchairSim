@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6506879, g: 0.58479196, b: 0.51935256, a: 1}
+  m_IndirectSpecularColor: {r: 0.6439064, g: 0.5843935, b: 0.5192323, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,11 +217,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &258218663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8277565359389561636, guid: 0d95565921ae4134fb6c6aade1f0d6e0, type: 3}
-  m_PrefabInstance: {fileID: 585058874}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &258218664 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5152012635431188980, guid: 0d95565921ae4134fb6c6aade1f0d6e0, type: 3}
@@ -1243,7 +1238,7 @@ PrefabInstance:
     - target: {fileID: 5327493272976215861, guid: 71dd8c78202e91844a7a446015bc7c92, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 6992488032072652531}
+      objectReference: {fileID: 1530106279}
     - target: {fileID: 8253261790768817482, guid: 71dd8c78202e91844a7a446015bc7c92, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1985,7 +1980,7 @@ PrefabInstance:
     - target: {fileID: 1989773891792850297, guid: df5c7d34374114a418e130b5cdb9040d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 258218663}
+      objectReference: {fileID: 1530106279}
     - target: {fileID: 1989773891792850297, guid: df5c7d34374114a418e130b5cdb9040d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
@@ -2137,7 +2132,7 @@ PrefabInstance:
     - target: {fileID: 356662950111243422, guid: 8de84022e93315f4b9193feb3fc23c10, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 258218663}
+      objectReference: {fileID: 1530106279}
     - target: {fileID: 2311057993794453908, guid: 8de84022e93315f4b9193feb3fc23c10, type: 3}
       propertyPath: m_Name
       value: SettingsWindow
@@ -2304,7 +2299,7 @@ PrefabInstance:
     - target: {fileID: 4675256237654663877, guid: cf4e9df74586a1946b384c7f40691859, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 6992488032072652531}
+      objectReference: {fileID: 1530106279}
     - target: {fileID: 4675256237654663877, guid: cf4e9df74586a1946b384c7f40691859, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
@@ -2406,11 +2401,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6992488032072652533}
   m_SourcePrefab: {fileID: 100100000, guid: cf4e9df74586a1946b384c7f40691859, type: 3}
---- !u!1 &6992488032072652531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8416272231841995353, guid: cf4e9df74586a1946b384c7f40691859, type: 3}
-  m_PrefabInstance: {fileID: 6992488032072652530}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6992488032072652532 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3161268264705406943, guid: cf4e9df74586a1946b384c7f40691859, type: 3}
