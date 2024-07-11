@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class ToggleObject : MonoBehaviour
 {
+    public bool canToggle = true;
+    public void SetToggle(bool toggle){
+        canToggle = toggle;
+    }
     public void ToggleGameObject(GameObject gogogo)
     {
-        gogogo.SetActive(!gogogo.activeSelf);
+        if(canToggle)
+            gogogo.SetActive(!gogogo.activeSelf);
     }
 
     public void ActivateGameObject(GameObject gogogo)
