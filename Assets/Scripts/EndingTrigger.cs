@@ -7,7 +7,7 @@ public class EndingTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject endingWindow;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
